@@ -1,1 +1,1 @@
-# javascript-snippets-browserAPI
+# C6
