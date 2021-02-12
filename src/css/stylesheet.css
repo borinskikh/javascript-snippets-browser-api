@@ -7,3 +7,16 @@
 .btn:hover {
     background-color: slategrey;
 }
+
+.task-form {
+    min-width: 25%;
+}
+
+#task1-icon {
+    height: 15px;
+    width: auto;
+}
+
+#task1-button {
+    max-width: 100px;
+}
