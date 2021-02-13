@@ -19,17 +19,6 @@
         const form = document.createElement('div');
         form.setAttribute('id', 'task0-form');
         form.setAttribute('class', 'm-5 d-flex flex-column task-form');
-        const field = document.createElement('div');
-        field.setAttribute('id', 'task0-field');
-        field.setAttribute('class', 'd-flex flex-column');
-        const input = document.createElement('input');
-        input.setAttribute('type', 'cardTitle');
-        input.setAttribute('id', 'task0-input');
-        input.setAttribute('class', 'bg-dark text-light border-secondary');
-        input.setAttribute('placeholder', ' Enter a number');
-        const label = document.createElement('label');
-        label.innerHTML = 'Enter a number between 1 and 10';
-        label.setAttribute('for', 'task0-input');
         const button = document.createElement('button');
         button.innerHTML = 'Submit';
         button.setAttribute('id', 'task0-button');
@@ -37,23 +26,23 @@
         button.addEventListener('click', () => submit());
         const output = document.createElement('div');
         output.setAttribute('id', 'task0-output');
-        output.setAttribute('class', 'd-flex flex-row flex-wrap flex-even');
+        output.setAttribute('class', 'd-flex flex-row flex-grow-1 justify-content-center');
 
         task.appendChild(content);
         content.appendChild(form);
         content.appendChild(output);
-        form.appendChild(field);
         form.appendChild(button);
-        field.appendChild(label);
-        field.appendChild(input);
         return task;
     }
 
     function submit() {
+        const output = document.getElementById('task0-output');
+        clearChildren(output);
         const ns = 'http://www.w3.org/2000/svg';
         const chart = document.createElementNS(ns, 'svg');
         chart.setAttribute('class', 'chart');
-        chart.setAttribute('viewbox', '0 0 300 200');
+        chart.setAttribute('width', '300');
+        chart.setAttribute('height', '200');
         const line1 = document.createElementNS(ns, 'line');
         line1.setAttribute('style', 'stroke-width: 2;');
         line1.setAttribute('stroke', 'white');
@@ -75,6 +64,13 @@
         chart.appendChild(line2);
         chart.appendChild(polyline);
 
-        document.getElementById('task0-output').appendChild(chart);
+        output.appendChild(chart);
+    }
+
+    function clearChildren(parent) {
+        //removes all children of a given parent element
+        while (parent.lastChild) {
+            parent.removeChild(parent.lastChild);
+        }
     }
 })();
