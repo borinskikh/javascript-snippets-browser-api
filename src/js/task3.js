@@ -4,34 +4,32 @@
     function getTask() {
         const task = document.createElement('div');
         task.setAttribute('id', 'task3');
-        task.setAttribute('class', 'task bg-dark d-flex flex-column');
+        task.setAttribute('class', 'task rounded-30 bg-dark d-flex flex-column');
         task.innerHTML = '<h3>task 3</h3>';
         const content = document.createElement('div');
         content.setAttribute('id', 'task3-content');
-        content.setAttribute('class', 'm-3 d-flex flex-column justify-content-center');
+        content.setAttribute('class', 'm-3 messages rounded-30 border border-secondary bg-secondary d-flex flex-column justify-content-center');
         const form = document.createElement('div');
         form.setAttribute('id', 'task3-form');
-        form.setAttribute('class', 'm-5 d-flex flex-row flex-wrap justify-content-center');
+        form.setAttribute('class', 'd-flex flex-row flex-nowrap justify-content-center');
         const input = document.createElement('input');
         input.setAttribute('type', 'text');
         input.setAttribute('id', 'task3-input');
-        input.setAttribute('class', 'bg-dark text-light border-secondary');
-        input.setAttribute('placeholder', ' Enter a number');
+        input.setAttribute('class', 'my-3 mx-0 bg-dark text-light border-light rounded-3');
+        input.setAttribute('placeholder', ' Enter a message');
         const button = document.createElement('button');
         button.setAttribute('id', 'task3-button');
-        button.setAttribute('class', 'm-3 btn btn-secondary');
+        button.setAttribute('class', 'my-3 mx-0 btn btn-secondary border');
         button.addEventListener('click', () => submit());
         const output = document.createElement('div');
         output.setAttribute('id', 'task3-output');
-        output.setAttribute('class', 'd-flex messages bg-secondary');
-
-
+        output.setAttribute('class', 'd-flex rounded-30 bg-dark outline-secondary');
         task.appendChild(content);
-        content.appendChild(form);
         content.appendChild(output);
+        content.appendChild(form);
         form.appendChild(input);
         form.appendChild(button);
-        button.appendChild(document.createTextNode('Submit'));
+        button.appendChild(document.createTextNode(''));
 
         return task;
     }
