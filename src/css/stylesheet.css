@@ -2,6 +2,16 @@
     border-radius: 30px;
 }
 
+.rounded-30-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.rounded-30-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
 .task {
     padding: 20px;
     margin: 20px;
@@ -21,8 +31,7 @@
 }
 
 #task3-input {
-    width: 100%;
-    height: 2rem;
+    min-height: 2rem;
 }
 
 #task3-output {
