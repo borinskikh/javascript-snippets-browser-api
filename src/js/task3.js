@@ -15,7 +15,7 @@
         form.setAttribute('class', 'd-flex flex-row flex-nowrap md-form');
         const input = document.createElement('textarea');
         input.setAttribute('id', 'task3-input');
-        input.setAttribute('class', 'my-3 mx-1 mx-0 md-textarea form-control bg-secondary text-light rounded-3 border-0');
+        input.setAttribute('class', 'my-1 mx-1 mx-0 md-textarea form-control bg-dark text-light rounded-3 border-0');
         input.setAttribute('rows', '1');
         input.setAttribute('placeholder', 'Message');
         const buttons = document.createElement('div');
@@ -79,9 +79,10 @@
         let tag = 'p';
         switch (type) {
             case 0:
-                justify = 'justify-content-end';
-            case 1: ;
                 justify = 'justify-content-start';
+                break;
+            case 1: ;
+                justify = 'justify-content-end';
                 break;
             case 2: ;
                 tag = 'a';
