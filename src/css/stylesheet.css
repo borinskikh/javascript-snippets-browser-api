@@ -26,8 +26,12 @@
 }
 
 .messages {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
+}
+
+.message {
+    max-width: 70%;
 }
 
 #task3-input {
@@ -35,8 +39,9 @@
 }
 
 #task3-output {
-    width: 100%;
+    width: auto;
     height: 100%;
+    overflow-y: scroll;
 }
 
 #task1-icon {
@@ -46,4 +51,14 @@
 
 #task1-button {
     max-width: 100px;
+}
+
+#task3-button {
+    width: 2rem;
+    height: 2rem;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
 }

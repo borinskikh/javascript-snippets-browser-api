@@ -1,12 +1,5 @@
 (() => {
-    document.getElementById('main').appendChild(getTask());
-    /*if (window.localStorage.getItem('task3-cards')) {
-        document.getElementById('task3-cards').innerHTML = window.localStorage.getItem('task3-cards');
-        console.log('Task 3: local storage was used');
-    } else {
-        document.getElementById('task3-input').value = '10';;
-        submit();
-    }*/
+    //document.getElementById('main').appendChild(getTask());
 
     function getTask() {
         const task = document.createElement('div');

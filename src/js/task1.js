@@ -5,7 +5,7 @@
         const ns = 'http://www.w3.org/2000/svg';
         const tasks = document.createElement('div');
         tasks.setAttribute('id', 'tasks');
-        tasks.setAttribute('class', 'task bg-dark d-flex flex-row flex-wrap justify-content-around');
+        tasks.setAttribute('class', 'task rounded-30 bg-dark d-flex flex-row flex-wrap justify-content-around');
         const task = document.createElement('div');
         task.setAttribute('id', 'task1');
         task.setAttribute('class', 'd-flex flex-column');

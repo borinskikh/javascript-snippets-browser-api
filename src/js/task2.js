@@ -33,6 +33,6 @@
         const clientWidth = document.documentElement.clientWidth;
         const clientHeight = document.documentElement.clientHeight;
 
-        alert('Screen size: ' + screenWidth + 'px / ' + screenHeight + 'px\nBrowser window\'s size with the scroll bar: ' + innerWidth + 'px / ' + innerHeight + 'px\nBrowser window\'s size without the scroll bar: ' + clientWidth + 'px / ' + clientHeight + 'px');
+        alert('Screen size: ' + screenWidth + 'px / ' + screenHeight + 'px\nBrowser window size with the scroll bar: ' + innerWidth + 'px / ' + innerHeight + 'px\nBrowser window size without the scroll bar: ' + clientWidth + 'px / ' + clientHeight + 'px');
     }
 })();
